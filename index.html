@@ -155,7 +155,7 @@ button.cta {
 	        <input name="next" value="https://www.alreflections.net/p/thank-you-for-reaching-out.html" hidden="">
 	        <input name="clientname" type="text" placeholder="Your Name" required="">  
 	        <input name="contact" type="text" placeholder="Your Email or Phone number" required="">
-		<input name="course" type="text" placeholder="Course Name" required="">
+		<input name="course" id="course" type="text" placeholder="Course Name" required="">
 		<button type="submit" class="cta">Apply for Certification</button>
 	      </form>
 	      <p id="response" style="margin-top:10px; color: #ffd700;"></p>
@@ -174,5 +174,6 @@ button.cta {
 			</ul>
 			<p>&copy; 2025 Alreflections. All rights reserved. By <a href="https://mihigoanaja.alreflections.net" style="color: #2b6">Mihigo ER Anaja</a></p>
 		</footer>
+	<script>course.value=getQueryParam('coursew')||'';</script>
   </body>
 </html>
